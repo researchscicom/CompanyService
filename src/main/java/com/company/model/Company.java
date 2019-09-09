@@ -87,4 +87,12 @@ public class Company {
                 ", password='" + password + '\'' +
                 '}';
     }
+
+    public String toValueString(){
+        return "^"+id+"="+name+"="+address+"="+phone+"="+email+"="+password;
+    }
+
+    public String toKeyString(){
+        return "id:name:address:phone:email:password";
+    }
 }
